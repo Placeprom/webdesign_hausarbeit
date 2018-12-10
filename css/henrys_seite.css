@@ -1,0 +1,18 @@
+@import url("main.css");
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+header h1 {
+    text-align: center;
+}
+
+.reiter {
+    margin: 1%;
+    text-align: center;
+    float: left;
+    width: 14%;
+    padding: 1%;
+
+}
