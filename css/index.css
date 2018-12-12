@@ -48,7 +48,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  font-size: 40px;
+  font-size: var(--header-font-size);
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 3;
