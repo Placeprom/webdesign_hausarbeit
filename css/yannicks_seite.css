@@ -1,1 +1,32 @@
 @import url("main.css");
+
+
+img {
+  max-width: 100%;
+  max-height: 100%
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  color: var(--main-bg-color);
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.img-wrapper{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: white;
+}
