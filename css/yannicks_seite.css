@@ -19,6 +19,18 @@ a {
   color: inherit;
 }
 
+p {
+  color: var(--header-font-color);
+}
+
+h1 {
+  color: var(--color-topic-6);
+  font-size: 40px;
+}
+
+h2 {
+  color: var(--header-font-color);
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12,1fr);
@@ -32,7 +44,7 @@ a {
   justify-content: center;
 
   font-weight: bold;
-  color: var(--main-bg-color);
+  color: var(--header-font-color);
   grid-row-start: 2;
   gird-row-end: 2;
   grid-column: span 2;
@@ -43,7 +55,7 @@ a {
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: white;
+  background-color: var(--header-color);
 }
 
 .header {
@@ -52,11 +64,11 @@ a {
   justify-content: center;
   grid-column-start: 3;
   grid-column-end: 13;
-  background-color: white;
+  background-color: var(--header-color);
 
   font-size: var(--header-font-size);
   font-weight: bold;
-  color: var(--main-bg-color);
+  color: var(--header-font-color);
 }
 
 .topic-1 {
@@ -76,4 +88,16 @@ a {
 }
 .topic-6 {
   background-color: var(--color-topic-6);
+}
+.content {
+  grid-row-start: 3;
+  grid-column: span 8;
+}
+.pad-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.side-nav {
+  grid-row-start: 3;
+  grid-column: span 4;
 }
