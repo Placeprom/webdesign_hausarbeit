@@ -1,1 +1,62 @@
 @import url("main.css");
+
+body{
+    margin: 0;
+    display: table;
+    width:100%;
+    background-color: var(--main-bg-color);
+}
+
+header{
+    display: table-row;
+    background-color: white;
+}
+
+header div {
+    display: table;
+}
+
+.header-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--header-font-size);
+    font-weight: bold;
+    color: var(--main-bg-color);
+}
+
+.img-wrapper {
+    display: table-cell;
+    width:  7.9%;
+}
+
+img{
+    max-width: 100%;
+    min-width: 150px;
+    min-height: 75px;
+}
+
+nav{
+    display: table-row;
+}
+
+nav div{
+    display: table;
+    width: 100%;
+    text-align: center;
+    min-height: 50px;
+    border-top: 0.5px solid var(--main-bg-color);
+}
+
+.nav-item {
+    display: table-cell;
+    width:  calc(100% / 6);
+    vertical-align: middle;
+    font-weight: bold;
+    color: var(--main-bg-color);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

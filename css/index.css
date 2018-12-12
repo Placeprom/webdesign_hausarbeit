@@ -58,33 +58,28 @@ a {
   color: var(--main-bg-color);
   font-weight: bold;
 }
+
 .topic-1 {
-  background-color: var(--color-topic-1);
   grid-column-start: 1;
   grid-column-end: 3;
 }
 .topic-2 {
-  background-color: var(--color-topic-2);
   grid-column-start: 3;
   grid-column-end: 5;
 }
 .topic-3 {
-  background-color: var(--color-topic-3);
   grid-column-start: 5;
   grid-column-end: 7;
 }
 .topic-4 {
-  background-color: var(--color-topic-4);
   grid-column-start: 7;
   grid-column-end: 9;
 }
 .topic-5 {
-  background-color: var(--color-topic-5);
   grid-column-start: 9;
   grid-column-end: 11;
 }
 .topic-6 {
-  background-color: var(--color-topic-6);
   grid-column-start: 11;
   grid-column-end: 13;
 }
