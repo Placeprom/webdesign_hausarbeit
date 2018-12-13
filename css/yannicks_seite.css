@@ -6,6 +6,7 @@ body, html {
   height: 100%;
   width: 100%;
   background-color: var(--main-bg-color);
+  color: var(--font-color);
 }
 
 img {
@@ -20,7 +21,7 @@ a {
 }
 
 p {
-  color: var(--header-font-color);
+  color: var(--font-color);
 }
 
 h1 {
@@ -29,7 +30,11 @@ h1 {
 }
 
 h2 {
-  color: var(--header-font-color);
+  color: var(--font-color);
+}
+li{
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .highlight {
@@ -80,7 +85,7 @@ h2 {
   justify-content: center;
 
   font-weight: bold;
-  color: var(--header-font-color);
+  color: var(--font-color);
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column: span 2;
@@ -93,7 +98,11 @@ h2 {
   grid-column-end: 3;
   background-color: var(--header-color);
 }
-
+.filler {
+  background-color: var(--header-color);
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
 .header {
   display: flex;
   align-items: center;
@@ -104,7 +113,7 @@ h2 {
 
   font-size: var(--header-font-size);
   font-weight: bold;
-  color: var(--header-font-color);
+  color: var(--font-color);
 }
 
 .topic-1 {
@@ -142,4 +151,32 @@ h2 {
 .side-nav {
   grid-row-start: 3;
   grid-column: span 4;
+}
+@keyframes change-color{
+  0% {background-color: red;}
+  50% { background-color: orange;}
+  100% {
+    background-color: yellow;
+    border-style: solid;}
+}
+
+.animated-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  animation-name: change-color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.animated-box-without-animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: red;
 }
