@@ -52,7 +52,7 @@ a {
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 3;
-  grid-column-end: 13;
+  grid-column-end: 11;
   background-color: var(--header-color);
   text-align: center;
   color: var(--header-font-color);
