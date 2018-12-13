@@ -151,6 +151,10 @@ li{
 .side-nav {
   grid-row-start: 3;
   grid-column: span 4;
+  margin-top: 40px;
+}
+.side-nav h2 {
+  margin-top: 0;
 }
 @keyframes change-color{
   0% {background-color: red;}
@@ -179,4 +183,13 @@ li{
   border-radius: 4px;
   margin-bottom: 10px;
   background-color: red;
+}
+.crazy-nav{
+  font-size: 50px;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+}
+.crazy-nav p {
+  color: var(--color-topic-6);
 }
