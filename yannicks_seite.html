@@ -19,23 +19,38 @@
         <div class="topic-6 nav-item"><a href="yannicks_seite.html">Inheritance & Extend</a></div>
         <div class ="content">
           <div class="pad-container">
-            <h1>Übersicht</h1>
-            <p>
-                Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll TextHier kommt ein wenig Text oh wie toll Text
-              Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text
-              Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text
-              Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text Hier kommt ein wenig Text oh wie toll Text
+            <p id="top-comment">
+              <span>Note:</span>We will only use the <span class="highlight">SCSS</span> Syntax. For information about the older <span class="highlight">SASS</span> syntax please visit <span class="highlight"><a href="https://sass-lang.com/">sass-lang.com</a></span>
             </p>
-            <h1>Zweites Thema</h1>
-            <h1>Drittes Thema</h1>
+            <h1>Inheritance & Extend</h1>
+            <p>
+              Inheritance is one of the most important features of Sass. With the <span class="code-box-small">@extend</span> keyboard you are able to share CSS properties between different selectors.
+              This means, that you can write a base-class for common styles which you then exted to specific needs of more specific classes.
+            </p>
+            <p>
+              Inheritance goes hand in hand with placeholder classes, another feature we will therefor be using right now. Placeholder classes only print if they are extended.
+            </p>
+            <h1>Example</h1>
+            <p>
+              Let´s see how this works in an example:
+            </p>
+            <div class="code-box-big">
+              <p class="example-text">%base-class {<br/>    border: 1px solid;<br/>   padding: 20px;<br/>   color: red;<br/>}</p>
+              <p class="example-text">%another-base-class{<br/>   border: 5px solid;<br />   padding: 50px;<br />   color: blue;<br />}</p>
+              <p class="example-text">.extended-one{<br/>   @extend %base-class;<br />   border-color: green;<br />}</p>
+              <p class="example-text">.extended-two{<br/>   @extend %base-class;<br />   border-color: blue;<br />}</p>
+            </div>
+            <p>
+              Notice how in the above example only <span class="code-box-small">%base-class</span> would be printed on screen. <span class="code-box-small">%another-base-class</span> would not be printed since it is not extended.
+            </p>
           </div>
         </div>
         <div class="side-nav">
-          <h2>Themen</h2>
+          <h2>Topics</h2>
           <ul>
-            <li>Übersicht</li>
-            <li>Zweites Thema</li>
-            <li>Drittes Thema</li>
+            <li>Inheritance & Extend</li>
+            <li>Example</li>
+            <li>Animation</li>
           </ul>
         </div>
       </div>
