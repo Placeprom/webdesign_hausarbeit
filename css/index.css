@@ -26,14 +26,18 @@ a {
   grid-column-end: 3;
   background-color: var(--header-color);
 }
-
+.filler {
+  background-color: var(--header-color);
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
 .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
 
   font-weight: bold;
-  color: var(--header-font-color);
+  color: var(--font-color);
   grid-row-start: 2;
   grid-row-end: 2;
 }
@@ -55,7 +59,7 @@ a {
   grid-column-end: 11;
   background-color: var(--header-color);
   text-align: center;
-  color: var(--header-font-color);
+  color: var(--font-color);
   font-weight: bold;
 }
 

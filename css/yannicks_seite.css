@@ -6,6 +6,7 @@ body, html {
   height: 100%;
   width: 100%;
   background-color: var(--main-bg-color);
+  color: var(--font-color);
 }
 
 img {
@@ -30,6 +31,13 @@ h1 {
 
 h2 {
   color: var(--font-color);
+<<<<<<< HEAD
+=======
+}
+li{
+  padding-top: 8px;
+  padding-bottom: 8px;
+>>>>>>> 3ccf89a1475c154801f0c7852e7b0919525282af
 }
 
 .highlight {
@@ -93,7 +101,11 @@ h2 {
   grid-column-end: 3;
   background-color: var(--header-color);
 }
-
+.filler {
+  background-color: var(--header-color);
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
 .header {
   display: flex;
   align-items: center;
@@ -142,4 +154,45 @@ h2 {
 .side-nav {
   grid-row-start: 3;
   grid-column: span 4;
+  margin-top: 40px;
+}
+.side-nav h2 {
+  margin-top: 0;
+}
+@keyframes change-color{
+  0% {background-color: red;}
+  50% { background-color: orange;}
+  100% {
+    background-color: yellow;
+    border-style: solid;}
+}
+
+.animated-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  animation-name: change-color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.animated-box-without-animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+.crazy-nav{
+  font-size: 50px;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+}
+.crazy-nav p {
+  color: var(--color-topic-6);
 }

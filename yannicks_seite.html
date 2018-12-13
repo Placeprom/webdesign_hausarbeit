@@ -11,11 +11,12 @@
           <a href="index.html"><img src="./img/sass_logo.png" alt="SASS"></a>
         </div>
         <div class="header">Learn SASS the easy way</div>
+        <div class="filler"></div>
         <div class="topic-1 nav-item"><a href="index.html">Home</a></div>
         <div class="topic-2 nav-item"><a href="davids_seite.html">Preprocessing</a></div>
         <div class="topic-3 nav-item"><a href="lukas_seite.html">Variables & Operators</a></div>
         <div class="topic-4 nav-item"><a href="henrys_seite.html">Nesting</a></div>
-        <div class="topic-5 nav-item"><a href="jan_seite.html">Mixins</a></div>
+        <div class="topic-5 nav-item"><a href="jans_seite.html">Mixins</a></div>
         <div class="topic-6 nav-item"><a href="yannicks_seite.html">Inheritance & Extend</a></div>
         <div class ="content">
           <div class="pad-container">
@@ -45,7 +46,28 @@
             </p>
             <h1>Animation</h1>
             <p>
-              Let us now have a look at an animation, which shows how inheritance works
+              Let us now have a look at an animation, which shows how inheritance works:
+            </p>
+            <div class="animated-box-without-animation">
+              %base-class
+            </div>
+            <div class="animated-box">
+              .base-class-extended
+            </div>
+
+            <ol>
+              <li>
+                At first we have our <span class="code-box-small">%base-class</span> which has the CSS property  <span class="code-box-small">background-color: red;</span> and
+                the <span class="code-box-small">border-radius: 4px;</span>
+              </li>
+              <li>
+                We then extend our new class <span class="code-box-small">.extended-class</span> with the keyword <span class="code-box-small">@extend %base-class;</span><br />
+              </li>
+              <li>
+                We add the property <span class="code-box-small">boder-style: solid;</span> to the class <span class="code-box-small">.extened-class</span>
+              </li>
+            </ol>
+            <p>
             </p>
           </div>
         </div>
@@ -57,6 +79,9 @@
             <li>Animation</li>
           </ul>
         </div>
+      </div>
+      <div class="crazy-nav">
+        <p><a href="jans_seite.html">&#xab;</a> <a href="index.html">&#xbb;</a><p>
       </div>
   </body>
 </html>
