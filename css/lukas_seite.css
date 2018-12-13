@@ -4,6 +4,7 @@ body{
     margin: 0;
     display: table;
     background-color: var(--main-bg-color);
+    color: var(--font-color);
 }
 
 header{
@@ -15,7 +16,7 @@ header{
     vertical-align: middle;
     font-size: var(--header-font-size);
     font-weight: bold;
-    color: var(--main-bg-color);
+    color: var(--font-color);
 }
 
 img{
@@ -25,7 +26,7 @@ img{
 }
 
 .nav-item{
-    width: calc(100%/5);
+    width: calc(100%/4);
     text-align: center;
     border-top: 1px solid var(--main-bg-color);
     vertical-align: middle;
@@ -38,18 +39,23 @@ img{
     width:calc(100%/6);
 }
 
+.nav-item, .topic1{
+    width:calc(100%/6);
+}
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--font-color);
 }
 
 
 aside{
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
-section{
-    color:white;
+.content{
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .inner-table{
@@ -61,16 +67,28 @@ section{
     display: table-row;
 }
 
-.table-column-1{
+.table-column-edge{
     display:table-column;
     width: calc(100%/6);
 }
 
-.table-column-2{
+.table-column-center{
     display:table-column;
-    width: calc(100%*5/6);
+    width: calc(100%*4/6);
 }
 
 .table-cell{
     display: table-cell;
+}
+
+h1{
+    color: var(--color-topic-3);
+}
+
+h2{
+    color: var(--color-topic-3);
+}
+
+.highlight{
+    color: var(--color-topic-3);
 }

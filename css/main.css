@@ -1,16 +1,17 @@
 :root{
   --main-bg-color:  white;
-  --color-topic-1:  #80ffdf;
-  --color-topic-2:  #80bfff;
+  --color-topic-1:  #80bfff;
+  --color-topic-2:  #80ffdf;
   --color-topic-3:  #80ff80;
   --color-topic-4:  #ffff80;
   --color-topic-5:  #ffdf80;
   --color-topic-6:  #ff9e80;
   --header-font-size: 40px;
   --header-color:  #fff7f7;
-  --header-font-color:  #424242;
+  --font-color:  #424242;
   --example-bg-color: #f8f8f8;
 }
+
 
 .topic-1 {
   background-color: var(--color-topic-1);
