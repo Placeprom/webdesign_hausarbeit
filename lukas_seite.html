@@ -8,12 +8,13 @@
     <body>
         <div class="table-column-edge"></div>
         <div class="table-column-center"></div>
-        <div class=""></div>
+
         <header class="table-row">
                 <div class="table-cell img-wrapper"><img src="./img/sass_logo.png" alt="SASS" id="test"></div>
                 <div class="table-cell header-text">Learn SASS the easy way</div>
                 <div class="table-cell"></div>   
         </header>
+
         <nav class="table-row">
             <div class="table-cell topic-1 nav-item"><a href="index.html">Home</a></div>
             <div class="table-cell">
@@ -28,41 +29,170 @@
             </div>
             <div class="table-cell topic-6 nav-item"><a href="yannicks_seite.html">Inheritance & Extend</a></div>
         </nav>
+
         <div class="table-row">
-                <aside class="table-cell">
+
+                <nav class="table-cell side-bar">
                     <h3>Topics:</h3>
                     <ul>
-                        <li>What are Variables</li>
-                        <li>How to use Variables</li>
-                        <li>Example for Variables</li>
-                        <li>What are Operatores</li>
-                        <li>How to use Operators</li>
-                        <li>Example for Operators</li>
+                        <li><a href="#what-variable">What are Variables</a></li>
+                        <li><a href="#how-variable">How to use Variables</a></li>
+                        <li><a href="#example-variable">Example for Variables</a></li>
+                        <li><a href="#what-operator">What are Operators</a></li>
+                        <li><a href="#how-operator">How to use Operators</a></li>
+                        <li><a href="#example-operator">Example for Operators</a></li>
                     </ul>
-                </aside>
-                <div class="table-cell content">
-                    <h1>Variablen and Operators</h1>
-                    <section class="table-cell">
-                        <h2>What are Variables</h2>
-                        <p>
-                            With Variables you are able to store information that you 
-                            can reuse. This can make your <strong>css</strong> code shorter and much
-                            easier to maintain, since you just have to change the value at
-                            a singel position in your code.
-                            <br>
-                            Altough it's called variable, it's much more used as a constant, since 
-                            you usually won't change the value of a self declared variable.   
-                        </p>
-                        <h2>How to use Variables</h2>
-                        <p>
-                            Now we will show you the syntax used in <span class="highlight">SCSS</span>.
-                            Once you have understood the snytax, you will be able to declare your own variables.
+                </nav>
 
-                        </p>                            
-                        <h2>What are Operatores</h2>
-                        <h2>How to use Operators</h2>
+                <section class="table-cell content">
+                    <h1>Variables and Operators</h1>
+
+                    <section>
+                        <h1>Variables</h1>
+
+                        <section id="what-variable">
+                            <h1>What are Variables</h1>
+                            <p>
+                                With Variables you are able to store information that you 
+                                can reuse. This can make your <strong>CSS</strong> code shorter and much
+                                easier to maintain, since you just have to change the value at
+                                a singel position in your code.
+                                <br>
+                                Altough it's called variable, it's much more used as a constant, since 
+                                you usually won't change the value of a self declared variable.   
+                            </p>
+                        </section>
+
+                        <section id="how-variable">
+                            <h1>How to use Variables</h1>
+                            <p>
+                                Now we will show you the syntax used in <span class="highlight">SCSS</span>.
+                                Once you have understood the snytax, you will be able to declare your own variables.
+                                To declare a variable, you just have to place a <span class="code">$</span> sign followed
+                                by the name you want your variable to have.
+                                Then you add <span class="code">:</span> followed by the string (the information) you want to save.
+                                An example is shown in <a href="#example-variable">Example for Variables</a>.
+                            </p>     
+                        </section>
+
+                        <section id="example-variable">     
+                            <h1>Example for Variables</h1>  
+                            <pre>
+
+$myWidth: 100px;
+$myBorder: 1px solid green;
+
+myBlock {
+    width: $myWidth;
+    border: $myBorder;
+}
+                            </pre>
+                            <p>
+                                In this Example we saved the settings for a <span class="code">border</span>
+                                in <span class="code">$myBorder</span> and the settings for our <span class=code>width</span>
+                                in <span class="code">$myWidth</span>.
+
+                            </p>
+                        </section>
+
                     </section>
-                </div>
+
+                    <section id="operators">
+                        <h1>Operators</h1>
+
+                        <section id="what-operator">
+                            <h1>What are Operators</h1>
+                            <p>
+                                Operators can be used for linguistic, logical or mathmatical operations. For example multiplying two Number with each other,
+                                concatinating two strings together or comparing two numbers with each other.
+                                <br>
+                                With <span class="highlight">SCSS</span> you can finally use lots of operators without using <span class="code">calc()</span>
+                                or the use of any other functions.
+                                In the following talbe you can observe operators you can use in <span class="highlight">SCSS</span>.
+                            </p>
+                            <table>
+                                <caption>Operators in <span class="highlight">SCSS</span></caption>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Function</th> 
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">+</span> B</td>
+                                    <td>Adds A and B together (if <span class="highlight">numbers</span>) or concatinates B to A (if <span class="highlight">strings</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">-</span> B</td>
+                                    <td>Subtracts the B from A</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">/</span> B</td>
+                                    <td>Devides A by B</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">*</span> B</td>
+                                    <td>Multiplies A and B</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">and</span> B</td>
+                                    <td>Returns <span class="code">true</span> if A and B are true (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">or</span> B</td>
+                                    <td>Returns <span class="code">true</span> if at least one of A and B is true (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="highlight">not</span> A</td>
+                                    <td>Returns <span class="code">true</span> if A is false and false if A is true (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">==</span> B</td>
+                                    <td>Returns <span class="code">true</span> if the A is equale to B (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">!=</span> B</td>
+                                    <td>Returns <span class="code">true</span> if A is diffrent from B (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">&lt;</span> B</td>
+                                    <td>Returns <span class="code">true</span> if A is smaller than B (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">&gt;</span> B</td>
+                                    <td>Returns <span class="code">true</span> if B is smaller than A (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="highlight">&lt;=</span> B</span></td>
+                                    <td>Returns <span class="code">true</span> if A is smaller than or equal to B (else <span class="code">false</span>)</td>
+                                </tr>
+                                <tr>
+                                    <td>A <span class="highlight">&gt;=</span> B</td>
+                                    <td>Returns <span class="code">true</span> if B is smaller than or equal to A (else <span class="code">false</span>)</td>
+                                </tr>
+                            </table>    
+                        </section>
+
+                        <section id="how-operator">
+                            <h1>How to use Operators</h1>
+                            <p>
+                                Operators are very easy to use.
+                                You simply have to add the operator you want to use inbetween the objects
+                                you want to use it on. 
+                                An exception is the <span class="code">not</span> operator, which only can
+                                be used in front of a singel object.
+                                <br>
+                                If you want to use an operator within a string, you can do that by putting
+                                both objects and the operator into a curly brackets with a hashtag in front.
+                                Like this: <span class="code">#{A + B}</span>.
+                            </p>
+                        </section>
+
+                        <section id="example-operator">
+                            <h1>Example for Operators</h1>   
+                        </section>
+
+                    </section>
+
+                </section>                                 
             </div>
         </div>
     </body>     
