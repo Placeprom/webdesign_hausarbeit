@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ger" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/henrys_seite.css">
+    <title>Nesting</title>
+</head>
+<body>
+    <header>
+
+    <img src="./img/sass_logo.png" alt="SASS">
+        <h1>Learn SASS the easy way <br></h1>
+    </header>
+
+    <nav>
+        <div class="topic-1 nav-bar">
+        <a href="index.html">Home</a>
+        </div>
+
+        <div class="topic-2 nav-bar">
+        <a href ="davids_seite.html">Preprocessing</a>
+        </div>
+
+        <div class="topic-3 nav-bar">
+        <a href ="lukas_seite.html">Variables,Operators</a>
+        </div>
+        
+        <div class="topic-4 nav-bar">
+        <a href="henrys_seite.html">Nesting</a>
+        </div>
+        
+        <div class="topic-5 nav-bar">
+        <a href="jans_seite.html">Mixin</a>
+        </div>
+        
+        <div class="topic-6 nav-bar">
+        <a href="yannicks_seite.html">Inheritence/Extend</a>
+        </div>
+    </nav>
+    
+    <div class="background">
+            <div class="content">
+                <h2>Nesting</h2>
+
+                <p>The SCSS code will follow the same visiual hierarchy like the html. 
+                    If a code for one element is written inside another element it will behave
+                    like : <br>Outer Element (Parent) > Inner Elemtent (Child)
+                </p>
+
+                <h2>Example:</h2>
+                <div class="example">
+                    <div class ="CSS">
+                        CSS:
+                        <br><br> .content {
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px;
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;
+                        <br>}
+                        <br><br>
+                        .content p {
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+                        <br>}
+                    </div>
+
+                    <div class="Pfeil">
+                        >
+                    </div>
+
+                    <div class="SCSS">
+                        SCSS:
+                        <br><br>.content {
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px;
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;
+                            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br>}
+                        
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+
+            </div>
+    </div>
+</body>
+</html>

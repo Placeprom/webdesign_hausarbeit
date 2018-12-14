@@ -1,18 +1,139 @@
 @import url("main.css");
 
-body {
-    background-color: var(--main-bg-color);
+body{
+    margin: 0;
+    
+    background-color: var(--font-color);
+    color: var(--main-bg-color);
+}
+
+header{
+    background-color: var(--header-color);
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+
+.content {
+   
+    height: 100%;
+    max-width: 100%;
+    padding: 50px;
+    margin: 50px;
+    
+}
+
+h2 {
+    color: var(--color-topic-4);
+}
+
+.example {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+}
+
+.CSS {
+    background-color:grey;
+    padding: 15px;
+    width:33%;
+    float: left;
+}
+
+.Pfeil {
+    float: left;
+    font-size: 250px;
+    font-weight: bold;
+    margin-left: 8%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+}
+
+.SCSS {
+    background-color: grey;
+    float:right;
+    width: 33%;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.clear {
+    clear:both;
 }
 
 header h1 {
     text-align: center;
+    margin-right: 200px;
+    font-size: var(--header-font-size);
+    font-weight: bold;
+    color: var(--font-color);
 }
 
-.reiter {
-    margin: 1%;
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.topic-1 {
+    margin: 0%;
     text-align: center;
     float: left;
-    width: 14%;
-    padding: 1%;
+    width: 15.4%;
+    padding: 0%;
+    clear:left;
+}
 
+.topic-2 {
+    margin: 0%;
+    text-align: center;
+    float: left;
+    width: 15.4%;
+    padding: 0%;
+}
+
+.topic-3 {
+    margin: 0%;
+    text-align: center;
+    float: left;
+    width: 15.4%;
+    padding: 0%;
+}
+
+.topic-4 {
+    margin: 0%;
+    text-align: center;
+    float: left;
+    width: 15.4%;
+    padding: 0%;
+}
+
+.topic-5{
+    margin: 0%;
+    text-align: center;
+    float: left;
+    width: 15.1%;
+    padding: 0%;
+}
+
+.topic-6{
+    margin: 0%;
+    text-align: center;
+    float: left;
+    width: 15.1%;
+    padding: 0%;
+}
+
+.nav-bar {
+    font-weight: bold;
+    color: var(--font-color);
+    padding: 10px;
+}
+
+img {
+    float: left;
+    max-width: 10%;
+    height: auto;
+    color: var(--font-color);
 }
