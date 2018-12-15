@@ -31,11 +31,14 @@ a {
   grid-column-start: 11;
   grid-column-end: 13;
 }
-.nav-item {
+
+.centered {
   display: flex;
   align-items: center;
   justify-content: center;
 
+}
+.nav-item {
   font-weight: bold;
   color: var(--font-color);
   grid-row-start: 2;
@@ -86,4 +89,8 @@ a {
 .topic-6 {
   grid-column-start: 11;
   grid-column-end: 13;
+}
+.content {
+  grid-column-start: 1;
+  grid-column-end: 12;
 }
