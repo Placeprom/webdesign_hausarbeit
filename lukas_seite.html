@@ -8,6 +8,7 @@
     <body>
         <div class="table-column-edge"></div>
         <div class="table-column-center"></div>
+        <div class="table-column-edge"></div>
 
         <header class="table-row">
                 <div class="table-cell img-wrapper"><img src="./img/sass_logo.png" alt="SASS" id="test"></div>
@@ -47,7 +48,7 @@
                 <section class="table-cell content">
                     <h1>Variables and Operators</h1>
 
-                    <section>
+                    <section id="variables">
                         <h1>Variables</h1>
 
                         <section id="what-variable">
@@ -181,13 +182,55 @@ myBlock {
                                 be used in front of a singel object.
                                 <br>
                                 If you want to use an operator within a string, you can do that by putting
-                                both objects and the operator into a curly brackets with a hashtag in front.
+                                both objects and the operator into curly brackets with a hashtag in front.
                                 Like this: <span class="code">#{A + B}</span>.
                             </p>
                         </section>
 
                         <section id="example-operator">
-                            <h1>Example for Operators</h1>   
+                            <h1>Example for Operators</h1>
+                            <div class="inner-table">
+                                <div class="table-row">
+                                    <div class="table-cell transition-left">
+                                        <pre>
+
+MyBox{
+    width: calc(50% + 20px);
+    height: calc(100px / 6 );
+}
+                                        </pre>
+                                    </div>
+                                    <div class="table-cell transition-center">
+                                        <p>
+                                            With <span class="highlight">SCSS</span>
+                                            <br>
+                                            <arrow-head></arrow-head>
+                                        </p> 
+                                    </div>
+                                    <div class="table-cell transition-right">
+                                        <pre>
+
+MyBox{
+    width: 50% + 20px;
+    height: 100px / 6;
+}
+                                        </pre>
+                                    </div>
+                                </div>
+                                <div class="table-row center-text">
+                                    <div class="table-cell">
+                                        <p>
+                                            Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">CSS</span>.
+                                        </p>
+                                    </div>
+                                    <div class="table-cell"></div>
+                                    <div class="table-cell">
+                                        <p>
+                                            Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">SCSS</span>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>   
                         </section>
 
                     </section>
@@ -195,5 +238,15 @@ myBlock {
                 </section>                                 
             </div>
         </div>
+        <footer class="table-row">
+            <div class="table-cell"></div>
+            <div class="table-cell">
+                <p class="footer-text">
+                    This page was created by Lukas Mayer.
+                    Student ID: 651145,
+                    Group: HomeMate
+                </p>
+            </div>
+        </footer>
     </body>     
 </html>
