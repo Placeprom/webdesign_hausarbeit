@@ -50,13 +50,13 @@
                 <h2>Example:</h2>
                 <div class="example">
                     <div class ="CSS">
-                        CSS:
+                        <strong>//CSS:</strong>
                         <br><br> .content {
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px;
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;
                         <br>}
                         <br><br>
-                        .content p {
+                        <span class="cssanimationred">.content p</span> {
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
                         <br>}
                     </div>
@@ -66,11 +66,11 @@
                     </div>
 
                     <div class="SCSS">
-                        SCSS:
+                        <strong>//SCSS:</strong>
                         <br><br>.content {
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px;
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;
-                            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {
+                            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">p</span> {
                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
                         <br>}
@@ -79,6 +79,44 @@
                 </div>
                 
                 <div class="clear"></div>
+
+                <div class="example2">
+                    <h2>Nested Properties</h2>
+
+                    <p>You can also nest proberties which share the same "forename". Therefore you don't 
+                        need to write repeadly the identical proberty over and over again.</p>
+
+                        <h2>Example:</h2>
+
+                    <div class="animation">
+                        
+                        <div class="CSS">
+                            <strong>//CSS:</strong>
+                            <br><br>.class {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font-</span>family: Helvetica;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font-</span>size: 18px;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font-</span>weight: bold;                          <br> }
+                        </div>
+
+                        <div class="Pfeil">
+                                <!----<span class="cssanimationred">-->&gt;<!---</span>-->
+                        </div>
+
+                        <div class="SCSS">
+                            <strong>//SCSS:</strong>
+                            <br><br>.class {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font-</span> {
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family: Helvetica;
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size: 18px;
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight: bold;
+                               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+                           <br> }
+                        </div>
+
+                        <div class="clear"></div>
+                    
+                    </div>
+                </div>
 
             </div>
     </div>
