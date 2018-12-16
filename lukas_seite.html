@@ -24,7 +24,7 @@
                         <div class="table-cell topic-2 nav-item"><a href="davids_seite.html">Preprocessing</a></div>
                         <div class="table-cell topic-3 nav-item"><a href="lukas_seite.html">Variables & Operators</a></div>
                         <div class="table-cell topic-4 nav-item"><a href="henrys_seite.html">Nesting</a></div>
-                        <div class="table-cell topic-5 nav-item"><a href="jan_seite.html">Mixins</a></div>    
+                        <div class="table-cell topic-5 nav-item"><a href="jans_seite.html">Mixins</a></div>    
                     </div>
                 </div>
             </div>
@@ -33,16 +33,26 @@
 
         <div class="table-row">
 
-                <nav class="table-cell side-bar">
+                <nav class="table-cell">
                     <h3>Topics:</h3>
-                    <ul>
-                        <li><a href="#what-variable">What are Variables</a></li>
-                        <li><a href="#how-variable">How to use Variables</a></li>
-                        <li><a href="#example-variable">Example for Variables</a></li>
-                        <li><a href="#what-operator">What are Operators</a></li>
-                        <li><a href="#how-operator">How to use Operators</a></li>
-                        <li><a href="#example-operator">Example for Operators</a></li>
-                    </ul>
+                    <ol>
+                        <li>
+                            <a href="#variables">Variables</a>
+                            <ol>
+                                <li><a href="#what-variable">What are Variables</a></li>
+                                <li><a href="#how-variable">How to use Variables</a></li>
+                                <li><a href="#example-variable">Example for Variables</a></li>
+                            </ol>
+                        <li>
+                            <a href="#operators">Operators</a>
+                            <ol>
+                                <li><a href="#what-operator">What are Operators</a></li>
+                                <li><a href="#how-operator">How to use Operators</a></li>
+                                <li><a href="#example-operator">Example for Operators</a></li>
+                            </ol>
+                        </li>
+                        
+                    </ol>
                 </nav>
 
                 <section class="table-cell content">
@@ -55,7 +65,7 @@
                             <h1>What are Variables</h1>
                             <p>
                                 With Variables you are able to store information that you 
-                                can reuse. This can make your <strong>CSS</strong> code shorter and much
+                                can reuse. This can make your <span class="css highlight">CSS</span> code shorter and much
                                 easier to maintain, since you just have to change the value at
                                 a singel position in your code.
                                 <br>
@@ -67,7 +77,7 @@
                         <section id="how-variable">
                             <h1>How to use Variables</h1>
                             <p>
-                                Now we will show you the syntax used in <span class="highlight">SCSS</span>.
+                                Now we will show you the syntax used in <span class="scss highlight">SCSS</span>.
                                 Once you have understood the snytax, you will be able to declare your own variables.
                                 To declare a variable, you just have to place a <span class="code">$</span> sign followed
                                 by the name you want your variable to have.
@@ -107,12 +117,12 @@ myBlock {
                                 Operators can be used for linguistic, logical or mathmatical operations. For example multiplying two Number with each other,
                                 concatinating two strings together or comparing two numbers with each other.
                                 <br>
-                                With <span class="highlight">SCSS</span> you can finally use lots of operators without using <span class="code">calc()</span>
+                                With <span class="scss highlight">SCSS</span> you can finally use lots of operators without using <span class="code">calc()</span>
                                 or the use of any other functions.
-                                In the following talbe you can observe operators you can use in <span class="highlight">SCSS</span>.
+                                In the following talbe you can observe operators you can use in <span class="scss highlight">SCSS</span>.
                             </p>
                             <table>
-                                <caption>Operators in <span class="highlight">SCSS</span></caption>
+                                <caption>Operators in <span class="scss highlight">SCSS</span></caption>
                                 <tr>
                                     <th>Operator</th>
                                     <th>Function</th> 
@@ -162,7 +172,7 @@ myBlock {
                                     <td>Returns <span class="code">true</span> if B is smaller than A (else <span class="code">false</span>)</td>
                                 </tr>
                                 <tr>
-                                    <td><span class="highlight">&lt;=</span> B</span></td>
+                                    <td>A <span class="highlight">&lt;=</span> B</span></td>
                                     <td>Returns <span class="code">true</span> if A is smaller than or equal to B (else <span class="code">false</span>)</td>
                                 </tr>
                                 <tr>
@@ -190,45 +200,45 @@ myBlock {
                         <section id="example-operator">
                             <h1>Example for Operators</h1>
                             <div class="inner-table">
+                                <div calss="table-column-transition-edge"></div>
+                                <div calss="table-column-transition-center"></div>
+                                <div calss="table-column-transition-edge"></div>
                                 <div class="table-row">
-                                    <div class="table-cell transition-left">
-                                        <pre>
+<pre class="table-cell transition-left">
 
 MyBox{
     width: calc(50% + 20px);
     height: calc(100px / 6 );
 }
-                                        </pre>
-                                    </div>
+
+</pre>
+
                                     <div class="table-cell transition-center">
                                         <p>
-                                            With <span class="highlight">SCSS</span>
+                                            With <span class="highlight">SCSS</span> 
                                             <br>
                                             <arrow-head></arrow-head>
                                         </p> 
                                     </div>
-                                    <div class="table-cell transition-right">
-                                        <pre>
+<pre class="table-cell transition-right">
 
 MyBox{
     width: 50% + 20px;
     height: 100px / 6;
 }
-                                        </pre>
-                                    </div>
+
+</pre>
                                 </div>
                                 <div class="table-row center-text">
-                                    <div class="table-cell">
-                                        <p>
-                                            Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">CSS</span>.
-                                        </p>
-                                    </div>
+                                    <p class="table-cell">
+                                        <br>
+                                        Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">CSS</span>.
+                                    </p>                               
                                     <div class="table-cell"></div>
-                                    <div class="table-cell">
-                                        <p>
-                                            Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">SCSS</span>.
-                                        </p>
-                                    </div>
+                                    <p class="table-cell">
+                                        <br>
+                                        Calculating <span class="code">height</span> and <span class="code">width</span> with <span class="highlight">SCSS</span>.
+                                    </p>        
                                 </div>
                             </div>   
                         </section>
