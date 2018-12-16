@@ -171,13 +171,9 @@ pre code{
 }
 
 .transition-center{
-    padding: 1%;
-    background-color: var(--color-topic-5);
     border-radius: 10px;
-    color: #303030;
     position: absolute;
     left: 60%;
-    text-align: center;
     vertical-align: middle;
     animation-name: change-opacity-center;
     animation-duration: 15s;
@@ -194,6 +190,15 @@ pre code{
     animation-name: change-opacity-right;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+}
+
+arrow-head{
+    border: solid var(--color-topic-5);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width:10px;
+    height:10px;
+    transform: rotate(-45deg);
 }
 
 @keyframes change-opacity-left{
