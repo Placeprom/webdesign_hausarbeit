@@ -21,12 +21,6 @@ nav a{
 	padding: 15px;		
 }
 
-.topic-0{background-color: var(--color-topic-1);}
-.topic-1{background-color: var(--color-topic-2);}
-.topic-2{background-color: var(--color-topic-3);}
-.topic-3{background-color: var(--color-topic-4);}
-.topic-4{background-color: var(--color-topic-5);}
-.topic-5{background-color: var(--color-topic-6);}
 
 header{
 	font-size: 40px;
