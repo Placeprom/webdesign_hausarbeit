@@ -109,12 +109,3 @@ content{
     padding: 1%;
     background-color: var(--color-topic-6);
 }
-
-pre.p1{
-    background-color: darkslategrey;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: thin;
-    border-color: #ebebeb;
-
-}
