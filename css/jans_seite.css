@@ -71,7 +71,7 @@ text-decoration: none;
 color: var(--main-bg-color);
 }
 
-content{
+section{
     position: absolute;
     text-align: left;
     padding-left: 20%;
