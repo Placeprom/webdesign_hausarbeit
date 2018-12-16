@@ -1,0 +1,102 @@
+@import url("main.css");
+
+header{
+    background-color: var(--header-color);
+    padding-bottom: 10px; 
+}
+
+.header-text {
+    font-size: var(--header-font-size);
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+h1{
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    left: 35%;
+    color: #424242;
+}
+
+body{
+    position: absolute;
+    margin: 0;
+    background-color: var(--font-color);
+    color: var(--main-bg-color);
+}
+
+nav{
+text-align: center;
+display: block;
+font-weight: bold;
+}
+
+nav a{
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+color: black;
+}
+
+content{
+    position: absolute;
+    text-align: left;
+    padding-left: 20%; 
+    padding-top: 5%;
+    width: 60%;
+}
+
+.topic-1 {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-1);
+}
+
+.topic-2 {
+    position: absolute;
+    top: 67px;
+    left: 16.67%;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-2);
+}
+
+.topic-3 {
+    position: absolute;
+    top: 67px;
+    left: 33.34%;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-3);
+}
+
+.topic-4 {
+    position: absolute;
+    top: 67px;
+    left: 50.01%;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-4);
+}
+
+.topic-5 {
+    position: absolute;
+    top: 67px;
+    left: 66.68%;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-5);
+}
+
+.topic-6 {
+    position: absolute;
+    top: 67px;
+    left: 83.35%;
+    width: 16.67%;
+    padding: 1%;
+    background-color: var(--color-topic-6);
+}
