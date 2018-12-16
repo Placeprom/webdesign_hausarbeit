@@ -55,6 +55,36 @@ using the variable <code>$property</code> inside the parentheses so we can pass 
 you create your mixin, you can then use it as a CSS declaration starting with <code>@include</code> followed by the name of the mixin.
         </pre>
 
+
+
+
+
+<pre class="transition-left">
+
+:root {
+    --heading-style: {
+        text-transform: uppercase;
+        color: var(--rot);
+        border-bottom: 2px solid var(--rot);
+    };
+}         
+                
+</pre>
+                
+<div class="transition-center">
+    <p> 
+        <arrow-head></arrow-head>
+    </p> 
+</div>
+
+<pre class="transition-right">
+                
+h1 {
+    @apply --heading-style;
+}
+                
+</pre>
+
     </content>
 </body>
 </html>
