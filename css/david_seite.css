@@ -1,8 +1,11 @@
-﻿body{
+﻿@import url("main.css");
+
+
+body{
 	font-family: Arial;	
 	margin: 0;
 	font-weight: bold;
-	background-color: #424242;
+	background-color: var(--main-bg-color);
 }
 
 nav{
@@ -13,23 +16,23 @@ nav{
 nav a{
 	flex: 1 1 0;
 	text-decoration: none;
-	color: #424242;
+	color: var(--main-bg-color);
 	font-size: 18px;
 	padding: 15px;		
 }
 
-.topic-0{background-color: #80ffdf;}
-.topic-1{background-color: #80bfff;}
-.topic-2{background-color: #80ff80;}
-.topic-3{background-color: #ffff80;}
-.topic-4{background-color: #ffdf80;}
-.topic-5{background-color: #ff9e80;}
+.topic-0{background-color: var(--color-topic-1);}
+.topic-1{background-color: var(--color-topic-2);}
+.topic-2{background-color: var(--color-topic-3);}
+.topic-3{background-color: var(--color-topic-4);}
+.topic-4{background-color: var(--color-topic-5);}
+.topic-5{background-color: var(--color-topic-6);}
 
 header{
 	font-size: 40px;
-	background: #fff7f7;
+	background: var(--header-color);
 	display: flex;
-	color: #424242;
+	color: var(--main-bg-color);
 }
 
 img{height: 75px;}
@@ -56,44 +59,72 @@ content div{
 	font-weight: bold;
 }
 
-.c1{flex: 2 1 0;}
+.c1{flex: 4 1 0;}
 
-h1 div{
+.c2{flex: 1 1 0;}
+
+.c2 h1 div{
+	color: var(--color-topic-2); 
+	text-align: center;
+	background-color: var(--header-color);
+	border: 1px solid;
+	border-radius: 7px;
+	border-color: black;
+}
+
+.anima{
+	background-color:var(--header-color);
+	height:50%;
+	border-radius: 7px;
+	border-color: black;
+	border: 1px solid;
+}
+
+.beispielSass{color:var(--color-topic-2)}
+.beispielCSS{color:var(--header-color)}
+
+content h1 div{
 text-align:center;
 }
 
-div div{
+.c1 div{
 	margin-top: 30px;
 	margin-left: 20px;	
 	padding: 10px;
 	border-radius: 7px;
 	border: 1px solid;
 	border-color: black;
-	color: #424242;
+	color: var(--main-bg-color);
 }
+
+.c1 .ueberschrift{color:var(--color-topic-2);}
 
 div code{
-	background-color: #424242;
+	background-color: var(--main-bg-color);
 	border-radius: 3px;
 	padding: 2px;
-	color: #80bfff;
+	color: var(--color-topic-2);
 }
 
-.pre{background-color: #6E6E6E;
-	color: #80bfff;
+.ueberschrift{background-color: var(--header-color);
+	color: var(--color-topic-2);
 	transition: color 1s;
 	transition:background 1s}
 
-.pre:hover {
-	background-color: #80bfff;
-	color: #424242;
+.ueberschrift:hover {
+	background-color: var(--color-topic-2);
+	color: var(--main-bg-color);
 }
 
 .p{ 
-	background-color: #fff7f7;
+	background-color: var(--header-color);
 	transition:background 1s 
 }
 
 .p:hover {
-	background-color: #80bfff;
+	background-color: var(--color-topic-2);
+}
+
+.anima:hover{
+	background-color: var(--color-topic-2);
 }

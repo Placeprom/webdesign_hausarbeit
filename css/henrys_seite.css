@@ -104,58 +104,20 @@ div a {
   }
 
 .topic-1 {
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15.1%;
-    padding: 0%;
+
+
     clear:left;
 }
 
-.topic-2 {
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15.1%;
-    padding: 0%;
-}
-
-.topic-3 {
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15.1%;
-    padding: 0%;
-}
-
-.topic-4 {
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15%;
-    padding: 0%;
-}
-
-.topic-5{
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15.1%;
-    padding: 0%;
-}
-
-.topic-6{
-    margin: 0%;
-    text-align: center;
-    float: left;
-    width: 15.1%;
-    padding: 0%;
-}
 
 .nav-bar {
     font-weight: bold;
     color: var(--main-bg-color);
-    padding: 12px;
+    text-align: center;
+    float: left;
+    width: calc(100%/6);
+    padding-top:12px;
+    padding-bottom: 12px;
 }
 
 img {
