@@ -41,6 +41,10 @@ li{
   font-style: italic;
   color: var(--color-topic-6);
 }
+.italy
+{
+  font-style: italic;
+}
 
 #top-comment{
   margin-top: 40px;
