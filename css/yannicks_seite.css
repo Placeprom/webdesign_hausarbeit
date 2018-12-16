@@ -85,7 +85,6 @@ li{
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: 75px 50px;
-  grid-row-gap: 1px;
 }
 
 .nav-item {
@@ -164,7 +163,7 @@ li{
 }
 .side-nav h2 {
   margin-top: 0;
-  color: inherit;
+  color: var(--color-topic-6);
 }
 @keyframes change-color{
   0% {background-color: red;}
