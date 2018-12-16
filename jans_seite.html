@@ -61,10 +61,13 @@ you create your mixin, you can then use it as a CSS declaration starting with <c
 
 <pre class="transition-left">
 
-MyBox{
-    width: calc(50% + 20px);
-    height: calc(100px / 6 );
-}
+:root {
+    --heading-style: {
+        text-transform: uppercase;
+        color: var(--rot);
+        border-bottom: 2px solid var(--rot);
+    };
+}         
                 
 </pre>
                 
@@ -76,9 +79,8 @@ MyBox{
 
 <pre class="transition-right">
                 
-MyBox{
-    width: 50% + 20px;
-    height: 100px / 6;
+h1 {
+    @apply --heading-style;
 }
                 
 </pre>
