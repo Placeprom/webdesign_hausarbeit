@@ -74,8 +74,8 @@ footer{
   border-style: solid;
   border-width: thin;
   border-color: #ebebeb;
-  border-radius: 1.5px;
-  padding: 2px;
+  border-radius: 2px;
+  padding: 0.5px;
   font-weight: lighter;
 
 }
@@ -170,7 +170,9 @@ footer{
   100% {
     background-color: yellow;
     border-style: solid;
-    border-color: var(--font-color-light)}
+    border-radius: 3px;
+    border-width: medium;
+    border-color: var(--font-color);}
 }
 
 .animated-box{
