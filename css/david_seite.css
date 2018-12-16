@@ -2,6 +2,7 @@
 	font-family: Arial;	
 	margin: 0;
 	font-weight: bold;
+	background-color: #424242;
 }
 
 nav{
@@ -12,7 +13,7 @@ nav{
 nav a{
 	flex: 1 1 0;
 	text-decoration: none;
-	color: black;
+	color: #424242;
 	font-size: 18px;
 	padding: 15px;		
 }
@@ -28,6 +29,7 @@ header{
 	font-size: 40px;
 	background: #fff7f7;
 	display: flex;
+	color: #424242;
 }
 
 img{height: 75px;}
@@ -49,22 +51,15 @@ img{height: 75px;}
 content{display: flex;}
 
 content div{
-	background: #424242;
+	
 	padding: 30px;
 	font-weight: bold;
 }
 
 .c1{flex: 2 1 0;}
 
-h1{
-	margin-left: 20px;
-	background-color: #6E6E6E;
-	border-radius: 7px;
-	padding: 10px;
-	border: 1px solid;
-	border-color: black;
-	text-align: center;
-	color: #80bfff;
+h1 div{
+text-align:center;
 }
 
 div div{
@@ -74,6 +69,7 @@ div div{
 	border-radius: 7px;
 	border: 1px solid;
 	border-color: black;
+	color: #424242;
 }
 
 div code{
@@ -81,6 +77,16 @@ div code{
 	border-radius: 3px;
 	padding: 2px;
 	color: #80bfff;
+}
+
+.pre{background-color: #6E6E6E;
+	color: #80bfff;
+	transition: color 1s;
+	transition:background 1s}
+
+.pre:hover {
+	background-color: #80bfff;
+	color: #424242;
 }
 
 .p{ 

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html g="ger" dir="ltr">
 
 <head>
     <meta charset="utf-8" />    
@@ -9,18 +9,27 @@
 
 <body>
 		<header>
-			<div class="bild"><a href="index.html"><img src="./img/sass_logo.png";></a></div>
+			<div class="bild">
+				<a href="index.html"><img src="./img/sass_logo.png";></a>
+			</div>
 			<div class="header">Learn SASS the easy way</div>	
 			<div class="heady"></div>
 		</header>	
 		
 		<nav>					
-			<a class="topic-0"; href="index.html">Home</a><a class="topic-1"; href="davids_seite.html">Preprocessing</a><a class="topic-2"; href="lukas_seite.html">Variables & Operators</a><a class="topic-3"; href="henrys_seite">Nesting</a><a class="topic-4"; href="jans_seite.html">Mixins</a><a class="topic-5"; href="yannicks_seite.html">Inheritance & Extend</a>
+			<a class="topic-0"; href="index.html">Home</a>
+			<a class="topic-1"; href="davids_seite.html">Preprocessing</a>
+			<a class="topic-2"; href="lukas_seite.html">Variables & Operators</a>
+			<a class="topic-3"; href="henrys_seite.html">Nesting</a>
+			<a class="topic-4"; href="jans_seite.html">Mixins</a>
+			<a class="topic-5"; href="yannicks_seite.html">Inheritance & Extend</a>
 		</nav>
 					
 		<content>
 			<div class ="c1">
-				<h1>Preprocessing</h1>
+				<h1>
+					<div class="pre">Preprocessing</div>
+				</h1>
 					<div class="p">CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</div>
 
 					<div class="p">Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website.</div>
@@ -34,6 +43,7 @@
 					<div class="p">You can watch and output to directories by using folder paths as your input and output, and separating them with a colon. In this example:</div>
 
 					<div class="p"><code>ass --watch app/sass:public/stylesheets</code></div>
+
 					<div class="p">Sass would watch all files in the <code>app/sass</code> folder for changes, and compile CSS to the <code>public/stylesheets</code> folder.</div>
 			</div>
 		</content>		
