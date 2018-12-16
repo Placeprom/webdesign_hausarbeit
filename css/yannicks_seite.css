@@ -3,7 +3,6 @@
 :root {
   --font-color-dark: #424242;
   --font-color-light: white;
-  --main-bg-color-dark: #424242;
 }
 
 body, html {
@@ -11,8 +10,8 @@ body, html {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--main-bg-color-dark);
-  color: var(--font-color-light);
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
   min-width: 500px;
 }
 
