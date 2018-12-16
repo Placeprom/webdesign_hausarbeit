@@ -2,7 +2,7 @@
 
 header{
     background-color: var(--header-color);
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .header-text {
@@ -42,10 +42,19 @@ color: black;
 content{
     position: absolute;
     text-align: left;
-    padding-left: 20%; 
-    padding-top: 5%;
+    padding-left: 15%; 
     width: 60%;
+    top: 100px;
 }
+
+.code-box-big {
+    background-color: var(--example-bg-color);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ebebeb;
+    color: black;
+  }
 
 .topic-1 {
     position: absolute;
@@ -99,4 +108,13 @@ content{
     width: 16.67%;
     padding: 1%;
     background-color: var(--color-topic-6);
+}
+
+pre.p1{
+    background-color: darkslategrey;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ebebeb;
+
 }
