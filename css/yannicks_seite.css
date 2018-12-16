@@ -1,12 +1,18 @@
 @import url("main.css");
 
+:root {
+  --font-color-dark: #424242;
+  --font-color-light: white;
+  --main-bg-color-dark: #424242;
+}
+
 body, html {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--main-bg-color);
-  color: var(--font-color);
+  background-color: var(--main-bg-color-dark);
+  color: var(--font-color-light);
 }
 
 img {
@@ -18,10 +24,6 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-p {
-  color: var(--font-color);
 }
 
 h1 {
@@ -58,6 +60,7 @@ li{
   border-style: solid;
   border-width: thin;
   border-color: #ebebeb;
+  color: var(--font-color-dark);
 }
 
 .example-text{
@@ -68,12 +71,14 @@ li{
 
 .code-box-small{
   background-color: var(--example-bg-color);
+  color: var(--font-color-dark);
   border-style: solid;
   border-width: thin;
   border-color: #ebebeb;
   border-radius: 3px;
   padding: 2px;
   font-weight: lighter;
+
 }
 
 .grid-container {
@@ -159,16 +164,19 @@ li{
 }
 .side-nav h2 {
   margin-top: 0;
+  color: inherit;
 }
 @keyframes change-color{
   0% {background-color: red;}
   50% { background-color: orange;}
   100% {
     background-color: yellow;
-    border-style: solid;}
+    border-style: solid;
+    border-color: var(--font-color-light)}
 }
 
 .animated-box{
+  color: var(--font-color-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,6 +188,7 @@ li{
   animation-iteration-count: infinite;
 }
 .animated-box-without-animation{
+  color: var(--font-color-dark);
   display: flex;
   align-items: center;
   justify-content: center;
