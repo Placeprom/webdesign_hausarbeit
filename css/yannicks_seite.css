@@ -1,10 +1,5 @@
 @import url("main.css");
 
-:root {
-  --font-color-dark: #424242;
-  --font-color-light: white;
-}
-
 body, html {
   padding: 0;
   margin: 0;
@@ -31,9 +26,6 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
-  color: var(--font-color);
-}
 li{
   padding-top: 8px;
   padding-bottom: 8px;
@@ -60,7 +52,7 @@ li{
   border-style: solid;
   border-width: thin;
   border-color: #ebebeb;
-  color: var(--font-color-dark);
+  color: var(--main-bg-color);
 }
 
 .example-text{
@@ -71,11 +63,11 @@ li{
 
 .code-box-small{
   background-color: var(--example-bg-color);
-  color: var(--font-color-dark);
+  color: var(--main-bg-color);
   border-style: solid;
   border-width: thin;
   border-color: #ebebeb;
-  border-radius: 3px;
+  border-radius: 1.5px;
   padding: 2px;
   font-weight: lighter;
 
@@ -93,7 +85,7 @@ li{
   justify-content: center;
 
   font-weight: bold;
-  color: var(--font-color);
+  color: var(--main-bg-color);
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column: span 2;
@@ -121,7 +113,7 @@ li{
 
   font-size: var(--header-font-size);
   font-weight: bold;
-  color: var(--font-color);
+  color: var(--main-bg-color);
 }
 
 .topic-1 {
@@ -175,7 +167,7 @@ li{
 }
 
 .animated-box{
-  color: var(--font-color-dark);
+  color: var(--main-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +179,7 @@ li{
   animation-iteration-count: infinite;
 }
 .animated-box-without-animation{
-  color: var(--font-color-dark);
+  color: var(--main-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
