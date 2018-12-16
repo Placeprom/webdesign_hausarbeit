@@ -7,6 +7,13 @@ body{
     color: var(--main-bg-color);
 }
 
+h1 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header{
     background-color: var(--header-color);
     padding-top: 0.1px;
@@ -18,12 +25,13 @@ nav {
     width: 100%;
 }
 
-.content {
+.background {
    
     height: 100%;
    max-width: 100%;
     padding: 50px;
-    margin: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     
 }
 
@@ -78,6 +86,7 @@ h2 {
 @-webkit-keyframes cssfontturnred {
     0%{color:var(--main-bg-color);}
     50%{color: #ff0000};
+    100%{color: #ff0000};
 }
 
 header h1 {
@@ -153,4 +162,10 @@ img {
     max-width: 10%;
     height: auto;
     color: var(--font-color);
+}
+
+footer p {
+    font-size: x-small;
+    text-align: center;
+    margin-bottom: 10px;
 }
