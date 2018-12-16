@@ -5,8 +5,8 @@ body,html {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--font-color);
-  color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
   min-width: 750px;
 }
 
@@ -44,7 +44,7 @@ a {
 
 .nav-item {
   font-weight: bold;
-  color: var(--font-color);
+  color: var(--main-bg-color);
   grid-row-start: 2;
   grid-row-end: 2;
 }
@@ -68,7 +68,7 @@ header {
   grid-column-end: 11;
   background-color: var(--header-color);
   text-align: center;
-  color: var(--font-color);
+  color: var(--main-bg-color);
   font-weight: bold;
 }
 
