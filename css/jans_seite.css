@@ -220,11 +220,3 @@ arrow-head{
     80% {opacity: 1;}
     100%{opacity: 0;}
 }
-
-footer p {
-    font-size: x-small;
-    text-align: center;
-    color: var(--font-color);
-    top: 100%;
-    margin-bottom: 10px;
-}
