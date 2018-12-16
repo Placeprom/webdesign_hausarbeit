@@ -17,7 +17,7 @@ pre{
 }
 
 header{
-    background-color: var(--font-color);
+    background-color: var(--main-bg-color);
     padding-bottom: 1%;
     min-width: 1200px;
 }
