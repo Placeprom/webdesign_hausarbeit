@@ -13,6 +13,7 @@ body, html {
   width: 100%;
   background-color: var(--main-bg-color-dark);
   color: var(--font-color-light);
+  min-width: 500px;
 }
 
 img {
@@ -85,7 +86,6 @@ li{
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: 75px 50px;
-  grid-row-gap: 1px;
 }
 
 .nav-item {
@@ -164,7 +164,7 @@ li{
 }
 .side-nav h2 {
   margin-top: 0;
-  color: inherit;
+  color: var(--color-topic-6);
 }
 @keyframes change-color{
   0% {background-color: red;}
@@ -197,6 +197,7 @@ li{
   margin-bottom: 10px;
   background-color: red;
 }
+
 .crazy-nav{
   font-size: 50px;
   position: fixed;
@@ -205,4 +206,17 @@ li{
 }
 .crazy-nav p {
   color: var(--color-topic-6);
+}
+
+@media screen and (max-width: 1020px) {
+  .content {
+    grid-row-start: 4;
+    grid-column: span 12
+  }
+
+  .side-nav {
+    grid-row-start: 3;
+    grid-column: span 12;
+    padding-left:10%;
+  }
 }

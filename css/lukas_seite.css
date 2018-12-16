@@ -93,7 +93,6 @@ h1, h3, .highlight{
     font-family: monospace;
 }
 
-
 table{
     border-collapse: collapse;
     margin-left: auto;
@@ -124,13 +123,12 @@ pre{
 }
 
 arrow-head{
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    border: solid var(--color-topic-3);
+    border-width: 4px 4px 0 0;
     display: inline-block;
-    width:10px;
-    height:10px;
-    transform: rotate(-45deg);
-
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
 }
 
 .transition-left{
@@ -172,6 +170,11 @@ arrow-head{
     50% {opacity:  0;}
     51% {opacity: 1;}
     100% {opacity:  1;}
+}
+
+p.table-cell {
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 .center-text{
