@@ -25,7 +25,7 @@ header{
 .header-text {
     font-size: var(--header-font-size);
     font-weight: bold;
-    color: var(--main-bg-color);
+    color: var(--font-color);
 }
 
 #note{
