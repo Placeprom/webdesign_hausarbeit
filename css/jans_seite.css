@@ -47,6 +47,10 @@ h2{
     color: var(--color-topic-5);
 }
 
+h3{
+    color: var(--color-topic-5);
+}
+
 img{
     height: 75px;
 }
@@ -146,4 +150,77 @@ pre code{
     width: 16.67%;
     padding: 0.75%;
     background-color: var(--color-topic-6);
+}
+
+
+
+
+
+
+
+.transition-left{
+    padding: 1%;
+    background-color: var(--color-topic-5);
+    border-radius: 10px;
+    color: #303030;
+    position: absolute;
+    left: 20%;
+    animation-name: change-opacity-left;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.transition-center{
+    position: absolute;
+    left: 55%;
+    top: 900px;
+    vertical-align: middle;
+    animation-name: change-opacity-center;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.transition-right{
+    padding: 1%;
+    background-color: var(--color-topic-5);
+    border-radius: 10px;
+    color: #303030;
+    position: absolute;
+    left: 65%;
+    animation-name: change-opacity-right;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+arrow-head{
+    border: solid var(--color-topic-5);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    transform: rotate(-45deg);
+}
+
+@keyframes change-opacity-left{
+    0% {opacity: 0;}
+    10% {opacity:  0;}
+    11% {opacity: 1;}
+    80% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes change-opacity-center{
+    0% {opacity: 0;}
+    20% {opacity:  0;}
+    21% {opacity: 1;}
+    80% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes change-opacity-right{
+    0% {opacity: 0;}
+    30% {opacity:  0;}
+    31% {opacity: 1;}
+    80% {opacity: 1;}
+    100%{opacity: 0;}
 }

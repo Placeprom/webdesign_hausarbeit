@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./css/henrys_seite.css">
+    <link rel="icon" href="./img/sass_logo.png">
     <title>Nesting</title>
 </head>
 <body>
-    <header>
+    <logo>
 
     <img src="./img/sass_logo.png" alt="SASS">
-        <h1>Learn SASS the easy way <br></h1>
+    </logo>
+    <header>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn SASS the easy way <br></h1>
     </header>
 
     <nav>
@@ -30,7 +33,7 @@
         </div>
         
         <div class="topic-5 nav-bar">
-        <a href="jans_seite.html">Mixin</a>
+        <a href="jans_seite.html">Mixins</a>
         </div>
         
         <div class="topic-6 nav-bar">
@@ -39,7 +42,7 @@
     </nav>
     
     <div class="background">
-            <div class="content">
+            <content>
                 <h2>Nesting</h2>
 
                 <p>The SCSS code will follow the same visiual hierarchy like the html. 
@@ -84,7 +87,7 @@
                     <h2>Nested Properties</h2>
 
                     <p>You can also nest proberties which share the same "forename". Therefore you don't 
-                        need to write repeadly the identical proberty over and over again.</p>
+                        need to write repeatedly the identical proberty over and over again.</p>
 
                         <h2>Example:</h2>
 
@@ -99,13 +102,13 @@
                         </div>
 
                         <div class="Pfeil">
-                                <!----<span class="cssanimationred">-->&gt;<!---</span>-->
+                                &gt;
                         </div>
 
                         <div class="SCSS">
                             <strong>//SCSS:</strong>
                             <br><br>.class {
-                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font-</span> {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">font:</span> {
                                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family: Helvetica;
                                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size: 18px;
                                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight: bold;
@@ -118,7 +121,61 @@
                     </div>
                 </div>
 
-            </div>
+                <div>
+
+                    <h2>Referencing Parents Selectors: &</h2>
+
+                    <p>Inside a rule you don't need to write out the parent selector again. The & is 
+                        replacing the parent selector within the rule. The & must be written before
+                        a compound selector, but a suffix can be followed that will be added
+                        to the parent selector.
+                    </p>
+
+                    <h2>Example:</h2>
+
+                    <div class="animation">
+
+                        <div class="CSS">
+                            <strong>//CSS</strong>
+                            <br><br>.class {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: red; }
+                                <br><br><span class="cssanimationred">.class a</span> {
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none; }
+                                <br><br><span class="cssanimationred">.class a:hover</span> {
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue; }
+                        </div>
+                                    
+                        <div class="Pfeil">
+                            &gt;
+                        </div>
+
+                        <div class="SCSS">
+                            <strong>//SCSS</strong>
+                            <br><br>.class {
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: red;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">a</span> {
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cssanimationred">&:hover</span> {color: blue;}
+
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>}
+                        </div>
+                       
+
+                    </div>
+
+                </div>
+                
+                <div class="clear"></div>
+
+            </content>
     </div>
+<footer>
+    <p>This Page was created by Henry Engel,
+    Stud ID: 650321,
+    Group: HomeMate
+    </p>
+</footer>
+
 </body>
 </html>
