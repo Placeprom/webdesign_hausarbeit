@@ -1,5 +1,5 @@
 :root{
-  --main-bg-color:  #fff7f7;
+  --main-bg-color:  #424242;
   --color-topic-1:  #80ffdf;
   --color-topic-2:  #80bfff;
   --color-topic-3:  #80ff80;
@@ -8,7 +8,7 @@
   --color-topic-6:  #ff9e80;
   --header-font-size: 40px;
   --header-color:  #fff7f7;
-  --font-color:  #424242;
+  --font-color:   #fff7f7;
   --example-bg-color: #f8f8f8;
 }
 
