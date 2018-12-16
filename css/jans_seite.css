@@ -43,7 +43,7 @@ h1{
     text-align: center;
     top: -12px;
     left: 37%;
-    color: #424242;
+    color: var(--font-color);
     font-size: 40px;
 }
 
