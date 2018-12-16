@@ -25,7 +25,7 @@ header{
 .header-text {
     font-size: var(--header-font-size);
     font-weight: bold;
-    color: var(--main-bg-color);
+    color: var(--font-color);
 }
 
 #note{
@@ -43,7 +43,7 @@ h1{
     text-align: center;
     top: -12px;
     left: 37%;
-    color: var(--font-color);
+    color: var(--main-bg-color);
     font-size: 40px;
 }
 
